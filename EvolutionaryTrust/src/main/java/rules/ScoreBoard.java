@@ -12,17 +12,9 @@ public class ScoreBoard {
         this.player2Score = player2Score;
     }
 
-    public void updateScores(int player1Score, int player2Score) {
-        this.player1Score += player1Score;
-        this.player2Score += player2Score;
-    }
-
-    public int getPlayer1Score() {
-        return player1Score;
-    }
-
-    public int getPlayer2Score() {
-        return player2Score;
+    public void updateScores(ScoreBoard scoreBoard) {
+        this.player1Score += scoreBoard.player1Score;
+        this.player2Score += scoreBoard.player2Score;
     }
 
     @Override
@@ -37,5 +29,9 @@ public class ScoreBoard {
     @Override
     public int hashCode() {
         return Objects.hash(player1Score, player2Score);
+    }
+
+    public void print(int currentRound) {
+        System.out.println(currentRound + "  " + player1Score + "  " + player2Score);
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rules.GameTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-04-14T11:01:59" hostname="gopikriothusMBP" time="0.005">
+<testsuite name="rules.GameTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-04-14T11:17:48" hostname="gopikriothusMBP" time="0.005">
   <properties/>
   <testcase name="returnScoreForNRounds" classname="rules.GameTest" time="0.004"/>
-  <testcase name="bothCooperateWillReturnScores" classname="rules.GameTest" time="0.0"/>
+  <testcase name="bothCooperateWillReturnScores" classname="rules.GameTest" time="0.001"/>
   <system-out><![CDATA[Round  Player1  Player2
 1  2  2
 2  4  4

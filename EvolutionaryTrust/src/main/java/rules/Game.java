@@ -16,8 +16,9 @@ public class Game {
         System.out.println("Round" + "  " +"Player1" + "  " +"Player2");
         for(int currentRound=1;currentRound <=numberOfRounds ; currentRound++){
             ScoreBoard roundScores = ruleEngineInstance.returnScoresUsingRules(player1Type.makeMove(), player2Type.makeMove());
-            scoreBoard.updateScores(roundScores.getPlayer1Score(),roundScores.getPlayer2Score());
-            System.out.println(currentRound + "  " + scoreBoard.getPlayer1Score() + "  " + scoreBoard.getPlayer2Score());
+            scoreBoard.updateScores(roundScores);
+            //System.out.println(currentRound + "  " + scoreBoard.getPlayer1Score() + "  " + scoreBoard.getPlayer2Score()); //Todo Delete this
+            scoreBoard.print(currentRound);
         }
         return scoreBoard;
     }
