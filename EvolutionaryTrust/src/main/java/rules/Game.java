@@ -19,6 +19,6 @@ public class Game {
             scoreBoard.updateScores(roundScores.getPlayer1Score(),roundScores.getPlayer2Score());
             System.out.println(currentRound + "  " + scoreBoard.getPlayer1Score() + "  " + scoreBoard.getPlayer2Score());
         }
-        return new ScoreBoard(scoreBoard.getPlayer1Score(),scoreBoard.getPlayer2Score());
+        return scoreBoard;
     }
 }

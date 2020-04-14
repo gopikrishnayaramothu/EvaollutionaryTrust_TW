@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rules.ScoreBoardTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-14T09:54:16" hostname="gopikriothusMBP" time="0.0">
+<testsuite name="rules.ScoreBoardTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-14T10:09:17" hostname="gopikriothusMBP" time="0.0">
   <properties/>
   <testcase name="shouldReturnUpdatedScoresOfTwoPlayers" classname="rules.ScoreBoardTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
