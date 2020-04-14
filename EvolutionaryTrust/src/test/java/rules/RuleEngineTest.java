@@ -10,29 +10,25 @@ public class RuleEngineTest {
     @Test
     public void testCheatCheat() {
         ScoreBoard scores = RuleEngine.returnScoresUsingRules(CHEAT,CHEAT);
-        assertEquals(0,scores.getPlayer1Score());
-        assertEquals(0,scores.getPlayer2Score());
+        assertEquals(new ScoreBoard(0, 0), scores);
     }
 
     @Test
     public void testCooperateCooperate() {
         ScoreBoard scores = RuleEngine.returnScoresUsingRules(COOPERATE,COOPERATE);
-        assertEquals(2,scores.getPlayer1Score());
-        assertEquals(2,scores.getPlayer2Score());
+        assertEquals(new ScoreBoard(2, 2), scores);
     }
 
     @Test
     public void testCheatCooperate() {
         ScoreBoard scores = RuleEngine.returnScoresUsingRules(CHEAT,COOPERATE);
-        assertEquals(3,scores.getPlayer1Score());
-        assertEquals(-1,scores.getPlayer2Score());
+        assertEquals(new ScoreBoard(3, -1), scores);
     }
 
     @Test
     public void testCooperateCheat() {
         ScoreBoard scores = RuleEngine.returnScoresUsingRules(COOPERATE,CHEAT);
-        assertEquals(-1,scores.getPlayer1Score());
-        assertEquals(3,scores.getPlayer2Score());
+        assertEquals(new ScoreBoard(-1, 3), scores);
     }
 
 }

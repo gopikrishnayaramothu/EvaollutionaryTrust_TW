@@ -9,8 +9,7 @@ public class ScoreBoardTest {
     public void shouldReturnUpdatedScoresOfTwoPlayers() {
         ScoreBoard scoreBoard = new ScoreBoard(0,0);
         scoreBoard.updateScores(2,2);
-        assertEquals(2,scoreBoard.getPlayer1Score());
-        assertEquals(2,scoreBoard.getPlayer2Score());
+        assertEquals(new ScoreBoard(2, 2), scoreBoard);
     }
 
 }

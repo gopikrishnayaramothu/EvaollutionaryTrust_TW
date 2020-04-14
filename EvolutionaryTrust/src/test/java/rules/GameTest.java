@@ -11,17 +11,14 @@ public class GameTest {
     private ScoreBoard scores;
 
     @Test
-    public void bothCooperateWillReturnScores()
-    {
+    public void bothCooperateWillReturnScores() {
         scores = new Game(1).getPlayerScored(cooperatePlayer1, cooperatePlayer2);
-        assertEquals(2, scores.getPlayer1Score());
-        assertEquals(2, scores.getPlayer2Score());
+        assertEquals(new ScoreBoard(2, 2), scores);
     }
 
     @Test
     public void returnScoreForNRounds() {
         scores = new Game(3).getPlayerScored(cooperatePlayer1, cooperatePlayer2);
-        assertEquals(6, scores.getPlayer1Score());
-        assertEquals(6, scores.getPlayer2Score());
+        assertEquals(new ScoreBoard(6, 6), scores);
     }
 }

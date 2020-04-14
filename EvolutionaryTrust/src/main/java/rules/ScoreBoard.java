@@ -1,5 +1,7 @@
 package rules;
 
+import java.util.Objects;
+
 public class ScoreBoard {
 
     private  int player1Score;
@@ -21,5 +23,19 @@ public class ScoreBoard {
 
     public int getPlayer2Score() {
         return player2Score;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof ScoreBoard)) return false;
+        ScoreBoard that = (ScoreBoard) o;
+        return player1Score == that.player1Score &&
+                player2Score == that.player2Score;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(player1Score, player2Score);
     }
 }
