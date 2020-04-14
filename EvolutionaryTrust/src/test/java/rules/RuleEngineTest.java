@@ -9,30 +9,30 @@ public class RuleEngineTest {
     RuleEngine RuleEngine = new RuleEngine();
     @Test
     public void testCheatCheat() {
-        Pair scores = RuleEngine.returnScoresUsingRules(CHEAT,CHEAT);
-        assertEquals(Integer.valueOf(0),scores.getScore1());
-        assertEquals(Integer.valueOf(0),scores.getScore2());
+        ScoreBoard scores = RuleEngine.returnScoresUsingRules(CHEAT,CHEAT);
+        assertEquals(0,scores.getPlayer1Score());
+        assertEquals(0,scores.getPlayer2Score());
     }
 
     @Test
     public void testCooperateCooperate() {
-        Pair scores = RuleEngine.returnScoresUsingRules(COOPERATE,COOPERATE);
-        assertEquals(Integer.valueOf(2),scores.getScore1());
-        assertEquals(Integer.valueOf(2),scores.getScore2());
+        ScoreBoard scores = RuleEngine.returnScoresUsingRules(COOPERATE,COOPERATE);
+        assertEquals(2,scores.getPlayer1Score());
+        assertEquals(2,scores.getPlayer2Score());
     }
 
     @Test
     public void testCheatCooperate() {
-        Pair scores = RuleEngine.returnScoresUsingRules(CHEAT,COOPERATE);
-        assertEquals(Integer.valueOf(3),scores.getScore1());
-        assertEquals(Integer.valueOf(-1),scores.getScore2());
+        ScoreBoard scores = RuleEngine.returnScoresUsingRules(CHEAT,COOPERATE);
+        assertEquals(3,scores.getPlayer1Score());
+        assertEquals(-1,scores.getPlayer2Score());
     }
 
     @Test
     public void testCooperateCheat() {
-        Pair scores = RuleEngine.returnScoresUsingRules(COOPERATE,CHEAT);
-        assertEquals(Integer.valueOf(-1),scores.getScore1());
-        assertEquals(Integer.valueOf(3),scores.getScore2());
+        ScoreBoard scores = RuleEngine.returnScoresUsingRules(COOPERATE,CHEAT);
+        assertEquals(-1,scores.getPlayer1Score());
+        assertEquals(3,scores.getPlayer2Score());
     }
 
 }
