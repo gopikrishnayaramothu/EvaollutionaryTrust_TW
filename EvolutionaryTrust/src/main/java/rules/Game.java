@@ -17,7 +17,6 @@ public class Game {
         for(int currentRound=1;currentRound <=numberOfRounds ; currentRound++){
             ScoreBoard roundScores = ruleEngineInstance.returnScoresUsingRules(player1Type.makeMove(), player2Type.makeMove());
             scoreBoard.updateScores(roundScores);
-            //System.out.println(currentRound + "  " + scoreBoard.getPlayer1Score() + "  " + scoreBoard.getPlayer2Score()); //Todo Delete this
             scoreBoard.print(currentRound);
         }
         return scoreBoard;

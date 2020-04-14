@@ -32,6 +32,6 @@ public class ScoreBoard {
     }
 
     public void print(int currentRound) {
-        System.out.println(currentRound + "  " + player1Score + "  " + player2Score);
+        System.out.println(currentRound + "\t \t" + player1Score + "\t \t" + player2Score);
     }
 }

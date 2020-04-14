@@ -9,7 +9,7 @@ public class PlayerTest {
 
     @Test
     public void testMakeMoveShouldAlwaysReturnCooperateMove() {
-        Player cooperatePlayer = new Player();
+        Player cooperatePlayer = new Player(COOPERATE);
         assertEquals(COOPERATE,cooperatePlayer.makeMove());
     }
 }
