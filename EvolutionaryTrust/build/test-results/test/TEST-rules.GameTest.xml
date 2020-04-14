@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rules.GameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-14T11:44:55" hostname="gopikriothusMBP" time="0.003">
+<testsuite name="rules.GameTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-14T12:23:06" hostname="gopikriothusMBP" time="0.004">
   <properties/>
-  <testcase name="returnScoreForNRounds" classname="rules.GameTest" time="0.003"/>
+  <testcase name="returnScoreForNRounds" classname="rules.GameTest" time="0.004"/>
   <system-out><![CDATA[Round  Player1  Player2
 1	 	-1	 	3
 2	 	-2	 	6

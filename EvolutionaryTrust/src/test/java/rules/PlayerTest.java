@@ -9,7 +9,14 @@ public class PlayerTest {
 
     @Test
     public void testMakeMoveShouldAlwaysReturnCooperateMove() {
-        Player cooperatePlayer = new Player(COOPERATE);
+        Player cooperatePlayer = new Player(new CooperateBehaviour());
         assertEquals(COOPERATE,cooperatePlayer.makeMove());
     }
+
+    @Test
+    public void shouldMakeCheatMoveForCheatPlayer() {
+        Player cheatPlayer = new Player(new CheatBehaviour());
+        assertEquals(CHEAT, cheatPlayer.makeMove());
+    }
+
 }

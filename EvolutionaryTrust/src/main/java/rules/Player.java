@@ -1,16 +1,15 @@
 package rules;
 
-import static rules.MoveType.*;
-
 public class Player {
 
-    MoveType playerType;
+    PlayerBehaviour playerType;
 
-    public Player(MoveType playerType) {
+    public Player(PlayerBehaviour playerType) {
         this.playerType = playerType;
     }
 
     public MoveType makeMove() {
-        return playerType;
+        return playerType.getMoveType();
     }
 }
+
