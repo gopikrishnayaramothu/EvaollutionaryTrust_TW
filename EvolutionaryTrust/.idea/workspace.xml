@@ -14,15 +14,24 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/MoveType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/MoveType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/RuleEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/RuleEngine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/MoveTypeTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/PlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/rules/PlayerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.MoveTypeTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/RuleEngineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/rules/RuleEngineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.PlayerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.PlayerTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/rules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-rules.MoveTypeTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-rules.PlayerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-rules.PlayerTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rules/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rules/MoveTypeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/MoveTypeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rules/MoveType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/MoveType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rules/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rules/RuleEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/RuleEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rules/MoveTypeTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rules/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rules/RuleEngineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/RuleEngineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,12 +163,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RuleEngineTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RuleEngineTest.testCheatCooperate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;rules.RuleEngineTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;rules.RuleEngineTest.testCheatCooperate&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -174,12 +183,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="RuleEngineTest.testInvalidMoves" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RuleEngineTest.testCooperateCheat" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;rules.RuleEngineTest.testInvalidMoves&quot;" />
+        <option name="scriptParameters" value="--tests &quot;rules.RuleEngineTest.testCooperateCheat&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -197,10 +206,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.PlayerTest.testMakeMoveShouldAlwaysReturnCooperateMove" />
+        <item itemvalue="Gradle.RuleEngineTest.testCheatCooperate" />
+        <item itemvalue="Gradle.RuleEngineTest.testCooperateCheat" />
         <item itemvalue="Gradle.MoveTypeTest.testGetMoveTypeAlwaysReturnCooperate" />
         <item itemvalue="Gradle.GameTest.bothCooperateWillReturnScores" />
-        <item itemvalue="Gradle.RuleEngineTest" />
-        <item itemvalue="Gradle.RuleEngineTest.testInvalidMoves" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +223,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586770218916</updated>
-      <workItem from="1586770220650" duration="14410000" />
+      <workItem from="1586770220650" duration="15198000" />
     </task>
     <servers />
   </component>
@@ -234,22 +243,22 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="440" y="162" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1586835475220" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1586844618739">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1586853386947">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1586844618739" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1586844618738">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1586853386947" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1586853386946">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1586844618738" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1586844618737">
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1586853386946" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1586853386945">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1586844618737" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1586844618739">
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1586853386945" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1586853386947">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1586844618739" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1586853386947" />
     <state x="384" y="141" key="SettingsEditor" timestamp="1586779220679">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
