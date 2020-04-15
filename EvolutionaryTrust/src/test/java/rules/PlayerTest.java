@@ -8,7 +8,7 @@ import static rules.MoveType.*;
 public class PlayerTest {
 
     @Test
-    public void testMakeMoveShouldAlwaysReturnCooperateMove() {
+    public void shouldMakeMoveShouldAlwaysReturnCooperateMove() {
         Player cooperatePlayer = new Player(new CooperateBehaviour());
         assertEquals(COOPERATE,cooperatePlayer.makeMove());
     }

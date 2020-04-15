@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90042da1-846a-4483-ae7e-4c5e1da768ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rules/CheatBehaviour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rules/CooperateBehaviour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rules/PlayerBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rules/ConsolePlayerBehaviour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MoveTypeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/rules/ConsolePlayerBehaviourTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,21 +15,26 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/MoveType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/MoveType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/rules/GameTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/PlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/rules/PlayerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.GameTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/RuleEngineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/rules/RuleEngineTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/EvolutionaryTrust-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/EvolutionaryTrust-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.GameTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.GameTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/rules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-rules.GameTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-rules.GameTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-rules.GameTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rules/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rules/CheatBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/CheatBehaviour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rules/MoveType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/MoveType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rules/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rules/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rules/RuleEngineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/RuleEngineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +42,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="283" />
+    <option name="myElementSize" value="292" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -52,7 +57,17 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="EvolutionaryTrust" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="EvolutionaryTrust" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -104,13 +119,13 @@
       <recent name="rules" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PlayerTest.shouldMakeCheatMoveForCheatPlayer">
-    <configuration name="GameTest.returnScoreForNRounds" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="JUnit.ConsolePlayerBehaviourTest.shouldReturnCooperateMoveForCOInputFromPlayer">
+    <configuration name="Tests in 'EvolutionaryTrust.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;rules.GameTest.returnScoreForNRounds&quot;" />
+        <option name="scriptParameters" value="--tests *" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -125,93 +140,79 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlayerTest.shouldMakeCheatMoveForCheatPlayer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="/Users/gopikrishnayaramothu/IdeaProjects/EvolutionaryTrust [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;rules.PlayerTest.shouldMakeCheatMoveForCheatPlayer&quot;" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
+            <option value="dependencies" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="PlayerTest.shouldMakeCooperativeMoveForCooperativePlayer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;rules.PlayerTest.shouldMakeCooperativeMoveForCooperativePlayer&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="ConsolePlayerBehaviourTest.shouldReturnCheatMoveForCHInputFromPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionaryTrust.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rules" />
+      <option name="MAIN_CLASS_NAME" value="rules.ConsolePlayerBehaviourTest" />
+      <option name="METHOD_NAME" value="shouldReturnCheatMoveForCHInputFromPlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="PlayerTest.testMakeMoveShouldAlwaysReturnCooperateMove" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;rules.PlayerTest.testMakeMoveShouldAlwaysReturnCooperateMove&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="ConsolePlayerBehaviourTest.shouldReturnCooperateMoveForCOInputFromPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionaryTrust.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rules" />
+      <option name="MAIN_CLASS_NAME" value="rules.ConsolePlayerBehaviourTest" />
+      <option name="METHOD_NAME" value="shouldReturnCooperateMoveForCOInputFromPlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="Tests in 'rules'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;rules.*&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EvolutionaryTrust.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rules" />
+      <option name="MAIN_CLASS_NAME" value="rules.PlayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PlayerTest.shouldMakeCheatMoveForCheatPlayer" />
-        <item itemvalue="Gradle.PlayerTest.testMakeMoveShouldAlwaysReturnCooperateMove" />
-        <item itemvalue="Gradle.Tests in 'rules'" />
-        <item itemvalue="Gradle.PlayerTest.shouldMakeCooperativeMoveForCooperativePlayer" />
-        <item itemvalue="Gradle.GameTest.returnScoreForNRounds" />
+        <item itemvalue="JUnit.ConsolePlayerBehaviourTest.shouldReturnCooperateMoveForCOInputFromPlayer" />
+        <item itemvalue="Gradle.Tests in 'EvolutionaryTrust.test'" />
+        <item itemvalue="JUnit.ConsolePlayerBehaviourTest.shouldReturnCheatMoveForCHInputFromPlayer" />
+        <item itemvalue="Gradle./Users/gopikrishnayaramothu/IdeaProjects/EvolutionaryTrust [dependencies]" />
+        <item itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +226,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586770218916</updated>
-      <workItem from="1586770220650" duration="25311000" />
+      <workItem from="1586770220650" duration="31105000" />
+      <workItem from="1586931305394" duration="263000" />
     </task>
     <servers />
   </component>
@@ -233,34 +235,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="283" key="#com.intellij.ide.util.MemberChooser" timestamp="1586866191405">
+    <state x="709" y="283" key="#com.intellij.ide.util.MemberChooser" timestamp="1586928260117">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="709" y="283" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1586866191405" />
-    <state x="571" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586856628182">
+    <state x="709" y="283" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1586928260117" />
+    <state x="571" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586928040710">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="571" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1586856628182" />
+    <state x="571" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1586928040710" />
     <state x="440" y="162" key="CommitChangelistDialog2" timestamp="1586835475220">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="440" y="162" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1586835475220" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1586866878689">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1586931575351">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1586866878689" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1586866878689">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1586931575351" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1586931575350">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1586866878689" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1586866878688">
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1586931575350" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1586931575350">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1586866878688" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1586866878689">
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1586931575350" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1586931575350">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1586866878689" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1586931575350" />
     <state x="384" y="141" key="SettingsEditor" timestamp="1586779220679">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -269,10 +271,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="626" y="301" key="VcsDiffUtil.ChangesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1586835422188" />
-    <state x="100" y="100" width="1592" height="920" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586859090837">
+    <state x="100" y="100" width="1592" height="920" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1586929839360">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="100" y="100" width="1592" height="920" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1586859090837" />
+    <state x="100" y="100" width="1592" height="920" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1586929839360" />
     <state x="674" y="294" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1586842786497">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -281,13 +283,14 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="600" height="424" key="javadoc.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1586857688919" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1586779183347">
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1586931077299">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1586779183347" />
+    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1586931077299" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EvolutionaryTrust$RuleEngineTest_testCheatCooperate.ic" NAME="RuleEngineTest.testCheatCooperate Coverage Results" MODIFIED="1586781179963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/EvolutionaryTrust$Tests_in__rules_.ic" NAME="Tests in 'rules' Coverage Results" MODIFIED="1586930262155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/EvolutionaryTrust$RuleEngineTest.ic" NAME="RuleEngineTest Coverage Results" MODIFIED="1586842658702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -1,5 +1,21 @@
 package rules;
 
 public enum MoveType {
-    COOPERATE,CHEAT;
+    COOPERATE("CO"),CHEAT("CH");
+    String key;
+
+    MoveType(String key) {
+        this.key = key;
+    }
+
+    public static MoveType getMoveType(String input)
+    {
+        MoveType[] moveTypes = MoveType.values();
+        for(MoveType moveType : moveTypes)
+        {
+            if(moveType.key.equals(input))
+                return moveType;
+        }
+        return null;
+    }
 }

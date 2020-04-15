@@ -7,3 +7,9 @@ public class CheatBehaviour implements PlayerBehaviour {
         return MoveType.CHEAT;
     }
 }
+
+
+// ConsolePLayer
+// CH CO
+// input from the player
+// we should ready with the move
