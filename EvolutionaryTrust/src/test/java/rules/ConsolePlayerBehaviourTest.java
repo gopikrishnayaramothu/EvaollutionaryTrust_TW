@@ -19,12 +19,9 @@ public class ConsolePlayerBehaviourTest {
     @Test
     public void shouldReturnCooperateMoveForCOInputFromPlayer() {
         ConsolePlayerBehaviour consolePlayerBehaviour = new ConsolePlayerBehaviour();
-        Mockito.spy(consolePlayerBehaviour);
-        Mockito.doReturn(MoveType.COOPERATE).when(consolePlayerBehaviour.getMoveType());
 
         MoveType moveTypes = consolePlayerBehaviour.getMoveTypeForTest("CO");
 
         assertEquals(MoveType.COOPERATE, moveTypes);
-        assertEquals(MoveType.COOPERATE, consolePlayerBehaviour.getMoveType());
     }
 }
