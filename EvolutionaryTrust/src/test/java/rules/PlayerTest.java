@@ -49,4 +49,11 @@ public class PlayerTest {
 
     }
 
+    @Test
+    public void shouldReturnCooperateAsFirstMoveForCopyCatPlayer() throws IOException {
+        Player copyCatPlayer = new Player(new CopyCatPlayer());
+
+        assertEquals(COOPERATE,copyCatPlayer.makeMove());
+        assertEquals(COPY,copyCatPlayer.makeMove());
+    }
 }

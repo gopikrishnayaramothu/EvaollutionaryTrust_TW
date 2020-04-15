@@ -1,7 +1,7 @@
 package rules;
 
 public enum MoveType {
-    COOPERATE("CO"),CHEAT("CH");
+    COOPERATE("CO"),CHEAT("CH"),COPY("CP");
     String key;
 
     MoveType(String key) {

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rules.PlayerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-15T12:48:31" hostname="gopikriothusMBP" time="0.337">
+  <properties/>
+  <testcase name="shouldReturnCooperateAsFirstMoveForCopyCatPlayer" classname="rules.PlayerTest" time="0.337"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90042da1-846a-4483-ae7e-4c5e1da768ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/rules/GameIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rules/CopyCatPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rules/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -16,37 +17,22 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/ConsolePlayerBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/ConsolePlayerBehaviour.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/PlayerBehaviour.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/PlayerBehaviour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/RuleEngine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/RuleEngine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/ConsolePlayerBehaviourTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/rules/ConsolePlayerBehaviourTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/rules/GameTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/rules/MoveType.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/rules/MoveType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/GameIntegrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/rules/GameIntegrationTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/PlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/rules/PlayerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/rules/RuleEngineTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/rules/RuleEngineTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.ConsolePlayerBehaviourTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.GameTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.PlayerTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.RuleEngineTest.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.ScoreBoardTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/rules.GameIntegrationTest.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/rules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-rules.ConsolePlayerBehaviourTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-rules.GameTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-rules.PlayerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-rules.RuleEngineTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-rules.ScoreBoardTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-rules.GameIntegrationTest.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rules/CheatBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/CheatBehaviour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rules/ConsolePlayerBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/ConsolePlayerBehaviour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rules/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rules/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rules/PlayerBehaviour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/PlayerBehaviour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rules/RuleEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/RuleEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rules/ConsolePlayerBehaviourTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/ConsolePlayerBehaviourTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rules/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rules/MoveType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rules/MoveType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/rules/GameIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/GameIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/rules/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/rules/RuleEngineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/rules/RuleEngineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +119,20 @@
       <recent name="rules" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GameIntegrationTest">
+  <component name="RunManager" selected="Gradle.PlayerTest.shouldReturnCooperateAsFirstMoveForCopyCatPlayer">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rules.Main" />
+      <module name="EvolutionaryTrust.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rules.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameIntegrationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -154,52 +153,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GameIntegrationTest.shouldReturnScoreWhenBothPlayersAreCheat" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GameIntegrationTest.shouldReturnScoreWhenBothConsolePlayersAreCheat" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;rules.GameIntegrationTest.shouldReturnScoreWhenBothPlayersAreCheat&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GameIntegrationTest.shouldReturnScoreWhenBothPlayersAreConsolePlayers" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;rules.GameIntegrationTest.shouldReturnScoreWhenBothPlayersAreConsolePlayers&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GameIntegrationTest.shouldReturnScoreWhenBothPlayersAreCooperate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;rules.GameIntegrationTest.shouldReturnScoreWhenBothPlayersAreCooperate&quot;" />
+        <option name="scriptParameters" value="--tests &quot;rules.GameIntegrationTest.shouldReturnScoreWhenBothConsolePlayersAreCheat&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -234,13 +193,33 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="PlayerTest.shouldReturnCooperateAsFirstMoveForCopyCatPlayer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;rules.PlayerTest.shouldReturnCooperateAsFirstMoveForCopyCatPlayer&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PlayerTest.shouldReturnCooperateAsFirstMoveForCopyCatPlayer" />
+        <item itemvalue="Gradle.GameIntegrationTest.shouldReturnScoreWhenBothConsolePlayersAreCheat" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.GameIntegrationTest" />
         <item itemvalue="Gradle.GameIntegrationTest.shouldReturnScoreWhenOneConsolePLayerIsCooperateAnotherIsCheat" />
-        <item itemvalue="Gradle.GameIntegrationTest.shouldReturnScoreWhenBothPlayersAreConsolePlayers" />
-        <item itemvalue="Gradle.GameIntegrationTest.shouldReturnScoreWhenBothPlayersAreCheat" />
-        <item itemvalue="Gradle.GameIntegrationTest.shouldReturnScoreWhenBothPlayersAreCooperate" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +234,7 @@
       <option name="presentableId" value="Default" />
       <updated>1586770218916</updated>
       <workItem from="1586770220650" duration="31105000" />
-      <workItem from="1586931305394" duration="5699000" />
+      <workItem from="1586931305394" duration="12035000" />
     </task>
     <servers />
   </component>
@@ -263,10 +242,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="709" y="283" key="#com.intellij.ide.util.MemberChooser" timestamp="1586928260117">
+    <state x="709" y="283" key="#com.intellij.ide.util.MemberChooser" timestamp="1586953458442">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="709" y="283" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1586928260117" />
+    <state x="709" y="283" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1586953458442" />
     <state x="571" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1586928040710">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -275,22 +254,22 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="440" y="162" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1586835475220" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1586945124267">
+    <state width="1750" height="382" key="GridCell.Tab.0.bottom" timestamp="1586954909987">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1586945124267" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1586945124267">
+    <state width="1750" height="382" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1586954909987" />
+    <state width="1750" height="382" key="GridCell.Tab.0.center" timestamp="1586954909986">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1586945124267" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1586945124266">
+    <state width="1750" height="382" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1586954909986" />
+    <state width="1750" height="382" key="GridCell.Tab.0.left" timestamp="1586954909986">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1586945124266" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1586945124267">
+    <state width="1750" height="382" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1586954909986" />
+    <state width="1750" height="382" key="GridCell.Tab.0.right" timestamp="1586954909987">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1586945124267" />
+    <state width="1750" height="382" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1586954909987" />
     <state x="697" y="485" key="ReplaceDuplicatesPrompt" timestamp="1586942969170">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

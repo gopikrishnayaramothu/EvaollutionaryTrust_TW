@@ -3,7 +3,9 @@ package rules;
 import org.junit.Test;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.Buffer;
 
 import static org.junit.Assert.assertEquals;
@@ -37,8 +39,9 @@ public class GameIntegrationTest {
 
     @Test
     public void shouldReturnScoreWhenBothConsolePlayersAreCheat() throws IOException {
-        BufferedReader bufferReader = mock(BufferedReader.class);
-        when(bufferReader.readLine()).thenReturn("CH");
+        //byte[] byteArray = new byte["CO".getBytes(),"CH".getBytes()];
+        System.setIn(new ByteArrayInputStream("CO".getBytes()));
+        BufferedReader bufferReader = new BufferedReader(new InputStreamReader(System.in));
         ConsolePlayerBehaviour consolePlayer = new ConsolePlayerBehaviour(bufferReader);
         player1 = new Player(consolePlayer);
         player2 = new Player(consolePlayer);
@@ -67,6 +70,18 @@ public class GameIntegrationTest {
         player1 = new Player(consolePlayer);
         player2 = new Player(consolePlayer);
         ScoreBoard scores = new Game(1).getPlayerScored(player1, player2);
+
+        assertEquals(new ScoreBoard(-1, 3), scores);
+    }
+
+    @Test
+    public void shouldReturnScoreWhenOneCopyCatPlayerAnotherCheatPlayer() throws IOException {
+        BufferedReader bufferReader = mock(BufferedReader.class);
+        when(bufferReader.readLine()).thenReturn("CO").thenReturn("CH");
+        CopyCatPlayer copyCatPlayer = new CopyCatPlayer();
+        player1 = new Player(copyCatPlayer);
+        player2= new Player(cheatBehaviour);
+        ScoreBoard scores = new Game(2).getPlayerScored(player1, player2);
 
         assertEquals(new ScoreBoard(-1, 3), scores);
     }
