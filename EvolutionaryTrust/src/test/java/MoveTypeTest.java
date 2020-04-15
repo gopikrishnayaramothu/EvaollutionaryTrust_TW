@@ -1,6 +1,7 @@
 import org.junit.Test;
 import rules.MoveType;
 ;import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class MoveTypeTest {
     @Test
@@ -15,5 +16,12 @@ public class MoveTypeTest {
         MoveType move = MoveType.getMoveType("CO");
 
         assertEquals(MoveType.COOPERATE,move);
+    }
+
+    @Test
+    public void shouldReturnNullIfTheKeyIsInvalid() {
+        MoveType move = MoveType.getMoveType("INVALID");
+
+        assertNull(move);
     }
 }

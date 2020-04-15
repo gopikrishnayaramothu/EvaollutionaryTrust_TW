@@ -3,25 +3,46 @@ package rules;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import org.mockito.*;
+import static org.junit.Assert.assertNull;
+
+import java.io.ByteArrayInputStream;
 
 public class ConsolePlayerBehaviourTest {
 
+    private ByteArrayInputStream getSystem(String moveType)
+    {
+        return new ByteArrayInputStream(moveType.getBytes());
+    }
     @Test
-    public void shouldReturnCheatMoveForCHInputFromPlayer() {
+    public void shouldReturnCooperateMoveForCOInput()
+    {
+        System.setIn(getSystem("CO"));
         ConsolePlayerBehaviour consolePlayerBehaviour = new ConsolePlayerBehaviour();
 
-        MoveType moveTypes = consolePlayerBehaviour.getMoveTypeForTest("CH");
+        MoveType moveTypes = consolePlayerBehaviour.getMoveType();
+
+        assertEquals(MoveType.COOPERATE, moveTypes);
+    }
+
+    @Test
+    public void shouldReturnCheatMoveForCHInput()
+    {
+        System.setIn(getSystem("CH"));
+        ConsolePlayerBehaviour consolePlayerBehaviour = new ConsolePlayerBehaviour();
+
+        MoveType moveTypes = consolePlayerBehaviour.getMoveType();
 
         assertEquals(MoveType.CHEAT, moveTypes);
     }
 
     @Test
-    public void shouldReturnCooperateMoveForCOInputFromPlayer() {
+    public void shouldReturnNullMoveForCXInput()
+    {
+        System.setIn(getSystem("CX"));
         ConsolePlayerBehaviour consolePlayerBehaviour = new ConsolePlayerBehaviour();
 
-        MoveType moveTypes = consolePlayerBehaviour.getMoveTypeForTest("CO");
+        MoveType moveTypes = consolePlayerBehaviour.getMoveType();
 
-        assertEquals(MoveType.COOPERATE, moveTypes);
+        assertNull( moveTypes);
     }
 }
