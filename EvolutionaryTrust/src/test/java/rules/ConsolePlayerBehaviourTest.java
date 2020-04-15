@@ -1,23 +1,29 @@
 package rules;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
-import java.io.ByteArrayInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
 
 public class ConsolePlayerBehaviourTest {
 
-    private ByteArrayInputStream getSystem(String moveType)
-    {
-        return new ByteArrayInputStream(moveType.getBytes());
+    private BufferedReader bufferedReader;
+
+    @Before
+    public void setUp() throws Exception {
+        bufferedReader = mock(BufferedReader.class);
     }
+
     @Test
-    public void shouldReturnCooperateMoveForCOInput()
-    {
-        System.setIn(getSystem("CO"));
-        ConsolePlayerBehaviour consolePlayerBehaviour = new ConsolePlayerBehaviour();
+    public void shouldReturnCooperateMoveForCOInput() throws IOException {
+        when(bufferedReader.readLine()).thenReturn("CO");
+        ConsolePlayerBehaviour consolePlayerBehaviour = new ConsolePlayerBehaviour(bufferedReader);
 
         MoveType moveTypes = consolePlayerBehaviour.getMoveType();
 
@@ -25,10 +31,9 @@ public class ConsolePlayerBehaviourTest {
     }
 
     @Test
-    public void shouldReturnCheatMoveForCHInput()
-    {
-        System.setIn(getSystem("CH"));
-        ConsolePlayerBehaviour consolePlayerBehaviour = new ConsolePlayerBehaviour();
+    public void shouldReturnCheatMoveForCHInput() throws IOException {
+        when(bufferedReader.readLine()).thenReturn("CH");
+        ConsolePlayerBehaviour consolePlayerBehaviour = new ConsolePlayerBehaviour(bufferedReader);
 
         MoveType moveTypes = consolePlayerBehaviour.getMoveType();
 
@@ -36,10 +41,9 @@ public class ConsolePlayerBehaviourTest {
     }
 
     @Test
-    public void shouldReturnNullMoveForCXInput()
-    {
-        System.setIn(getSystem("CX"));
-        ConsolePlayerBehaviour consolePlayerBehaviour = new ConsolePlayerBehaviour();
+    public void shouldReturnNullMoveForCXInput() throws IOException {
+        when(bufferedReader.readLine()).thenReturn("CX");
+        ConsolePlayerBehaviour consolePlayerBehaviour = new ConsolePlayerBehaviour(bufferedReader);
 
         MoveType moveTypes = consolePlayerBehaviour.getMoveType();
 

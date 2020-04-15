@@ -1,6 +1,8 @@
 package rules;
 
 
+import java.io.IOException;
+
 public class Game {
 
     RuleEngine ruleEngineInstance = new RuleEngine();
@@ -12,10 +14,10 @@ public class Game {
             scoreBoard = new ScoreBoard(0,0);
     }
 
-    public ScoreBoard getPlayerScored(Player player1Type, Player player2Type) {
+    public ScoreBoard getPlayerScored(Player player1Type, Player player2Type) throws IOException {
         System.out.println("Round" + "  " +"Player1" + "  " +"Player2");
         for(int currentRound=1;currentRound <=numberOfRounds ; currentRound++){
-            ScoreBoard roundScores = ruleEngineInstance.returnScoresUsingRules(player1Type.makeMove(), player2Type.makeMove());
+            ScoreBoard roundScores = ruleEngineInstance.scores(player1Type.makeMove(), player2Type.makeMove());
             scoreBoard.updateScores(roundScores);
             scoreBoard.print(currentRound);
         }

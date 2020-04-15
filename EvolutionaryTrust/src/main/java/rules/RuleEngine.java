@@ -9,7 +9,7 @@ public class RuleEngine {
     private static final int CHEAT_SCORE_PLAYER2 = 3;
     private static final int CHEAT_SCORE = 0;
 
-    public  ScoreBoard returnScoresUsingRules(MoveType player1Move, MoveType player2Move) {
+    public  ScoreBoard scores(MoveType player1Move, MoveType player2Move) {
         if (player1Move.equals(CHEAT) && player2Move.equals(CHEAT)) {
             return new ScoreBoard(CHEAT_SCORE, CHEAT_SCORE);
         } else if (player1Move.equals(CHEAT) && player2Move.equals(COOPERATE)) {

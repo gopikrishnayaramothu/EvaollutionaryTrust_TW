@@ -1,5 +1,7 @@
 package rules;
 
+import java.io.IOException;
+
 public class Player {
 
     PlayerBehaviour playerType;
@@ -8,7 +10,7 @@ public class Player {
         this.playerType = playerType;
     }
 
-    public MoveType makeMove() {
+    public MoveType makeMove() throws IOException {
         return playerType.getMoveType();
     }
 }

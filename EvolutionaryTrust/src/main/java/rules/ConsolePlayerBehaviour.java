@@ -1,14 +1,20 @@
 package rules;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
 
 public class ConsolePlayerBehaviour implements PlayerBehaviour{
 
+    BufferedReader bufferedReader ;
+
+    public ConsolePlayerBehaviour(BufferedReader bufferedReader) {
+        this.bufferedReader = bufferedReader;
+    }
+
     @Override
-    public MoveType getMoveType() {
+    public MoveType getMoveType() throws IOException {
         System.out.println("Please Enter Your Move");
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
+        String input = bufferedReader.readLine();
         return MoveType.getMoveType(input);
     }
 }
