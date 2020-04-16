@@ -18,4 +18,15 @@ public enum MoveType {
         }
         return null;
     }
+
+    public static String getMoveType(MoveType input)
+    {
+        MoveType[] moveTypes = MoveType.values();
+        for(MoveType moveType : moveTypes)
+        {
+            if(moveType == input)
+                return moveType.key;
+        }
+        return null;
+    }
 }

@@ -24,4 +24,11 @@ public class MoveTypeTest {
 
         assertNull(move);
     }
+
+    @Test
+    public void shouldReturnCOIFTheMOveTypeIsCOOPERATE() {
+        String cooperateMoveValue = MoveType.getMoveType(MoveType.COOPERATE);
+
+        assertEquals("CO",cooperateMoveValue);
+    }
 }

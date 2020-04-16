@@ -1,40 +1,63 @@
 package rules;
 
-
+import java.beans.PropertyChangeSupport;
 import java.io.IOException;
 
 public class Game {
 
-    RuleEngine ruleEngineInstance = new RuleEngine();
-    int numberOfRounds;
-    ScoreBoard scoreBoard;
+    private RuleEngine ruleEngineInstance = new RuleEngine();
+    private int numberOfRounds;
+    private ScoreBoard scoreBoard;
+    //private PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
+    private MoveType lastMove;
 
     public Game(int numberOfRounds) {
         this.numberOfRounds = numberOfRounds;
         scoreBoard = new ScoreBoard(0, 0);
+        //propertyChangeSupport.addPropertyChangeListener(new CopyCatPlayer());
     }
 
     public ScoreBoard getPlayerScored(Player player1Type, Player player2Type) throws IOException {
         System.out.println("Round" + "  " + "Player1" + "  " + "Player2");
+
         for (int currentRound = 1; currentRound <= numberOfRounds; currentRound++) {
-            MoveType[] movesArray = saveLastMove(player1Type.makeMove(), player2Type.makeMove());
-            ScoreBoard roundScores = ruleEngineInstance.scores(movesArray[0], movesArray[1]);
+            MoveType player1Move = player1Type.makeMove();
+            MoveType player2Move = player2Type.makeMove();
+            if (!(player1Type.playerType instanceof CopyCatPlayer)) {
+                prepareToStoreLastMove(player1Move);
+            } else if (!(player2Type.playerType instanceof CopyCatPlayer)) {
+                prepareToStoreLastMove(player2Move);
+            }
+            ScoreBoard roundScores = new ScoreBoard(0, 0);
+            if ((player1Type.playerType instanceof CopyCatPlayer)) {
+                roundScores = ruleEngineInstance.scores(takeLastMove(currentRound, player1Move), player2Move);
+            } else if ((player2Type.playerType instanceof CopyCatPlayer)) {
+                roundScores = ruleEngineInstance.scores(player1Move, takeLastMove(currentRound, player2Move));
+            } else {
+                roundScores = ruleEngineInstance.scores(player1Move, player2Move);
+            }
             scoreBoard.updateScores(roundScores);
             scoreBoard.print(currentRound);
         }
         return scoreBoard;
     }
 
-    private MoveType[] saveLastMove(MoveType player1, MoveType player2) {
-        if (player1 == MoveType.COPY && player2 == MoveType.COPY) {
-            player1 = player2 = MoveType.COOPERATE;
-        } else if (player2 == MoveType.COPY) {
-            player2 = player1;
-        } else if (player1 == MoveType.COPY) {
-            player1 = player2;
-        }
-
-        return new MoveType[]{player1, player2};
+    private void storeLastMove(MoveType playerMove) {
+        // propertyChangeSupport.firePropertyChange("MoveTypeChange", this, playerMove);
+        this.lastMove = playerMove;
     }
+
+    private MoveType takeLastMove(int currentRound, MoveType playerMove) throws IOException {
+        if (currentRound == 1) {
+            return playerMove;
+        } else {
+            return this.lastMove;
+        }
+    }
+
+    private void prepareToStoreLastMove(MoveType playerMove) throws IOException {
+        storeLastMove(playerMove);
+    }
+
 
 }

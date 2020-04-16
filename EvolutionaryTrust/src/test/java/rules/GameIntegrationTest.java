@@ -37,18 +37,17 @@ public class GameIntegrationTest {
         assertEquals(new ScoreBoard(0, 0), scores);
     }
 
-    @Test
-    public void shouldReturnScoreWhenBothConsolePlayersAreCheat() throws IOException {
-        //byte[] byteArray = new byte["CO".getBytes(),"CH".getBytes()];
-        System.setIn(new ByteArrayInputStream("CO".getBytes()));
-        BufferedReader bufferReader = new BufferedReader(new InputStreamReader(System.in));
-        ConsolePlayerBehaviour consolePlayer = new ConsolePlayerBehaviour(bufferReader);
-        player1 = new Player(consolePlayer);
-        player2 = new Player(consolePlayer);
-        ScoreBoard scores = new Game(1).getPlayerScored(player1, player2);
-
-        assertEquals(new ScoreBoard(0, 0), scores);
-    }
+//    @Test
+//    public void shouldReturnScoreWhenBothConsolePlayersAreCheat() throws IOException {
+//        System.setIn(new ByteArrayInputStream("CO".getBytes()));
+//        BufferedReader bufferReader = new BufferedReader(new InputStreamReader(System.in));
+//        ConsolePlayerBehaviour consolePlayer = new ConsolePlayerBehaviour(bufferReader);
+//        player1 = new Player(consolePlayer);
+//        player2 = new Player(consolePlayer);
+//        ScoreBoard scores = new Game(1).getPlayerScored(player1, player2);
+//
+//        assertEquals(new ScoreBoard(0, 0), scores);
+//    }
 
     @Test
     public void shouldReturnScoreWhenBothConsolePlayersAreCooperate() throws IOException {
@@ -76,13 +75,53 @@ public class GameIntegrationTest {
 
     @Test
     public void shouldReturnScoreWhenOneCopyCatPlayerAnotherCheatPlayer() throws IOException {
-        BufferedReader bufferReader = mock(BufferedReader.class);
-        when(bufferReader.readLine()).thenReturn("CO").thenReturn("CH");
         CopyCatPlayer copyCatPlayer = new CopyCatPlayer();
         player1 = new Player(copyCatPlayer);
         player2= new Player(cheatBehaviour);
         ScoreBoard scores = new Game(2).getPlayerScored(player1, player2);
 
-        assertEquals(new ScoreBoard(-1, 3), scores);
+        assertEquals(new ScoreBoard(-1, 3).toString(), scores.toString());
+    }
+
+    @Test
+    public void shouldReturnScoreWhenOneCopyCatPlayerAnotherCooperatePLayer() throws IOException {
+        CopyCatPlayer copyCatPlayer = new CopyCatPlayer();
+        player1 = new Player(copyCatPlayer);
+        player2= new Player(cooperateBehaviour);
+        ScoreBoard scores = new Game(2).getPlayerScored(player1, player2);
+
+        assertEquals(new ScoreBoard(4, 4).toString(), scores.toString());
+    }
+
+    @Test
+    public void shouldReturnScoreWhenOneCheatPlayerAnotherCopyCatPlayer() throws IOException {
+        CopyCatPlayer copyCatPlayer = new CopyCatPlayer();
+        player1 = new Player(cheatBehaviour);
+        player2= new Player(copyCatPlayer);
+        ScoreBoard scores = new Game(2).getPlayerScored(player1, player2);
+
+        assertEquals(new ScoreBoard(3, -1).toString(), scores.toString());
+    }
+
+    @Test
+    public void shouldReturnScoreWhenOneCooperatePLayerAnotherCopyCatPlayer() throws IOException {
+        CopyCatPlayer copyCatPlayer = new CopyCatPlayer();
+        player1 = new Player(cooperateBehaviour);
+        player2= new Player(copyCatPlayer);
+        ScoreBoard scores = new Game(2).getPlayerScored(player1, player2);
+
+        assertEquals(new ScoreBoard(4, 4).toString(), scores.toString());
+    }
+
+    @Test
+    public void shouldReturnScoreWhenOneConsolePLayerAnotherCopyCatPlayer() throws IOException {
+        BufferedReader bufferReader = mock(BufferedReader.class);
+        when(bufferReader.readLine()).thenReturn("CO").thenReturn("CH");
+        ConsolePlayerBehaviour consolePlayer = new ConsolePlayerBehaviour(bufferReader);
+        player1 = new Player(consolePlayer);
+        player2 = new Player(new CopyCatPlayer());
+        ScoreBoard scores = new Game(2).getPlayerScored(player1, player2);
+
+        assertEquals(new ScoreBoard(5, 1), scores);
     }
 }

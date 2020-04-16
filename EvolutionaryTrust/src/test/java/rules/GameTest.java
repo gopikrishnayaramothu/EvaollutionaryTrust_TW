@@ -42,10 +42,6 @@ public class GameTest {
         assertEquals(scoreBoardAfterThreeRounds, scores);
     }
 
-    private RuleEngine setup() {
-        return mock(RuleEngine.class);
-    }
-
     @Test
     public void shouldReturnCooperatePlayerCheatPlayerScoreForNRounds() throws IOException {
         ScoreBoard scoreBoard = new ScoreBoard(-1, 3);
